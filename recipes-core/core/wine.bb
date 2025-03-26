@@ -32,4 +32,6 @@ EXTRA_OEMAKE += "WITH_NLS=./nls"
 
 DEPENDS += "winetools-native flex-native bison-native"
 
+FILES:${PN}-staticdev += "${libdir}/**/*.a ${includedir}"
+FILES:${PN}-dev += "${libdir}/*.so ${includedir}"
 
